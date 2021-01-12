@@ -2,13 +2,16 @@
 
 <html lang="en">
 
+<link rel="stylesheet" href="style.css">
+
 <head>
   <title>Asik Veysel</title>
 </head>
 
-<body>
+<body id="container" class="dark">
   <article id="header">
     <header>
+      <button onclick="switchMode()" style="position: fixed; top: 10px; right: 10px; z-index: 10;">Switch</button>
       <h1>Asik Veyselin Hayati</h1>
       <nav id="navigation">
         <h2>Menu</h2>
@@ -49,7 +52,7 @@
 
   <section id="biography">
     <h2>Biography</h2>
-    <a href="#navigation">Menu</a>
+    
     <article id="early-life">
       <section>
         <h3>Early Life</h3>
@@ -147,7 +150,15 @@
   <footer id="footer">
     &copy; 2020 - <a href="../about-us.html"> Designed by Bootcamp EU</a>
     <a href="#">Yukari don</a>
+    <a href="#navigation" style="position: fixed; bottom: 20px; right: 20px; z-index: 10;">Menu</a>
   </footer>
+
+  <script>
+    function switchMode() {
+      document.getElementById('container').classList.toggle('dark');
+    }
+  </script>
+
 </body>
 
 </html>

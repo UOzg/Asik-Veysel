@@ -1,0 +1,26 @@
+.green {
+	color: darkcyan;
+}
+
+.large-font {
+	font-size: 42px;
+}
+
+#navigation {
+	margin-top: 40px;
+	margin-bottom: 60px;
+}
+
+h1 {
+	font-size: 42px;
+	color: rgb(218, 35, 29) ;
+}
+
+.dark {
+	background-color: cadetblue;
+}
+
+/* specificity siralamasi
+<h1 class="green large-font" id="heading" style="color: black;">
+
+inline-style > #heading > h1.green > .green > h1 */
